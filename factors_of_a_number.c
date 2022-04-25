@@ -9,7 +9,5 @@ int main(){
   int n;
   printf("Choose a number: ");
   scanf("%i", &n);
-  for(int i=2; i<=n/2; i++){
-    if(n%i==0) if(fac(i-1)%i==i-1) printf("%i ", i);
-  }
+  for(int i=2; i<=n/2; i++) if(n%i==0) if(fac(i-1)%i==i-1) printf("%i ", i);
 }
