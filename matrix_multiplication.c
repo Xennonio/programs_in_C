@@ -53,13 +53,12 @@ int main() {
     //show on the display the matrix b[x][y]
     /* NOTE: is off-center for values ​​with different digits */
     printf("\nmatriz B: \n");
-    for(i = 0; i < x; i++) {
-        for(j = 0; j < y; j++) {
-            if(j == 0) printf("|%i ",b[i][j]);
-            if(j == y - 1) printf("%i|\n", b[i][j]);
-            if(j != 0 && j != y - 1) printf("%i ", b[i][j]);
-        }
-    }
+    printf("\nmatriz A: \n");
+      for(int i=0; i<x; i++){
+      printf("\n");
+      for(int j=0; j<y; j++)
+           printf("%d\t", b[i][j]);
+  }
 }
 
 /*NOTE: for values ​​with more than one digit in the matrix there is a decentralization of its formatting*/
