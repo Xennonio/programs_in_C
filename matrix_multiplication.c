@@ -36,13 +36,11 @@ int main() {
     //show on the display the matrix a[n][m]
     /* NOTE: is off-center for values ​​with different digits */
     printf("\nmatriz A: \n");
-    for(i = 0; i < n; i++) {
-        for(j = 0; j < m; j++) {
-            if(j == 0) printf("|%i ",a[i][j]);
-            if(j == m - 1) printf("%i|\n", a[i][j]);
-            if(j != 0 && j != m - 1) printf("%i ", a[i][j]);
-        }
-    }
+      for(int i=0; i<n; i++){
+      printf("\n");
+      for(int j=0; j<m; j++)
+           printf("%d\t", a[i][j]);
+  }
     B(); //call B() function to choose matrix b[n][m]
     int b[x][y]; //declaration of b[x][y]
     //for loop to scan the input values ​​of the array b[x][y]
